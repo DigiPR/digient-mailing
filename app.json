@@ -1,0 +1,8 @@
+{
+  "env": {
+    "CLOUDAMQP_URL": {
+      "description": "CloudAMQP - RabbitMQ URL with username, password, host and virtual-host",
+      "value": ""
+    }
+  }
+}

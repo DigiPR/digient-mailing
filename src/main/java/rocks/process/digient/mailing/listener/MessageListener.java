@@ -23,9 +23,12 @@ public class MessageListener {
 
     @StreamListener(target = Sink.INPUT, condition = "headers['type']=='mailing'")
     @Transactional
-    public void customerMessage(@Payload Message<Mailing> mailingMessage) throws Exception {
+    public void customerMessage(@Payload Message<Mailing> mailingMessage) {
         Mailing mailing = mailingMessage.getPayload();
         logger.info("Payload received: " + mailing.toString());
     }
+
+    @StreamListener(target = Sink.INPUT)
+    public void defaultListener() {}
 
 }

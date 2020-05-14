@@ -1,0 +1,10 @@
+{
+  "mailing": {
+    "mId": "m-100-001",
+    "cId": "c-100-001",
+    "cName": "Melinda Miller",
+    "email": "melinda@miller.com",
+    "emailBody": "Dear",
+    "emailAttachment": ""
+  }
+}
